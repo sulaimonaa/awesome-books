@@ -102,8 +102,8 @@ You can access this project using the link below:
 
 👤 **Author2**
 - GitHub: [@githubhandle](https://github.com/geekelo)
-- Twitter: [@twitterhandle]()
-- LinkedIn: [LinkedIn]()
+- Twitter: [@twitterhandle](https://twitter.com/Geekelo_xyz)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/eloghene-otiede)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
