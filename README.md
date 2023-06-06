@@ -87,7 +87,7 @@ Run this commands:
 
 You can access this project using the link below:
   
-  <a href="https://github.com/sulaimonaa/awesome-books/awesome-books-branch">Check out Awesome Books</a>
+  <a href="https://sulaimonaa.github.io/awesome-books/">Check out Awesome Books</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
