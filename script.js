@@ -19,10 +19,18 @@ function createLibrary() {
   bookLibrary.forEach((book, index) => {
     const bookContainer = document.createElement('div');
     bookContainer.innerHTML = `
-        <p>${book.title}</p>
-       <p> ${book.author}</p>
-            <button onclick="removeBook(${index})">Remove</button>
-        <hr>
+    <div class='book-list-container'>
+        <div class='wrap'>
+        <div>
+            <p>${book.title}</p>
+            <p> ${book.author}</p>
+        </div>
+       <div>
+        <button onclick="removeBook(${index})">Remove</button>
+       </div>
+       </div>
+    </div>
+    <hr>
     `;
     BooksContainer.appendChild(bookContainer);
   });
