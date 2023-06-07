@@ -56,6 +56,7 @@
 - **[Add book with title and author]**
 - **[Remove book]**
 - **[Event listeners]**
+-- **[OOP approach coding style]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
