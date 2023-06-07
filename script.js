@@ -8,17 +8,17 @@ class Bookstore {
   }
 
 
-storedLocal() {
-  if (localStorage.getItem('books') == null) {
-    localStorage.setItem('books', JSON.stringify(this.bookLibrary));
-  }
-
-
-const store = localStorage.getItem('books');
-    if (store) {
-      this.bookLibrary = JSON.parse(store);
+  storedLocal() {
+    if (localStorage.getItem('books') == null) {
+      localStorage.setItem('books', JSON.stringify(this.bookLibrary));
     }
-}
+
+
+  const store = localStorage.getItem('books');
+      if (store) {
+        this.bookLibrary = JSON.parse(store);
+      }
+  }
 
 createLibrary() {
   this.BooksContainer.innerHTML = '';
@@ -26,20 +26,20 @@ createLibrary() {
     const bookContainer = document.createElement('div');
     bookContainer.innerHTML = `
     <div class='book-list-container'>
-    <div class='wrap'>
-    <div>
-        <p>${book.titleBook}</p>
-        <p> ${book.authorBook}</p>
+      <div class='wrap'>
+        <div>
+            <p>${book.titleBook}</p>
+            <p> ${book.authorBook}</p>
+        </div>
+        <div class='removeBtn'>
+          <button onclick="removeBook(${index})">Remove</button>
+        </div>
+      </div>
     </div>
-   <div class='removeBtn'>
-    <button onclick="removeBook(${index})">Remove</button>
-   </div>
-   </div>
-</div>
     `;
     this.BooksContainer.appendChild(bookContainer);
   });
-}
+  }
 
 addBook(e) {
   e.preventDefault();
@@ -52,12 +52,9 @@ addBook(e) {
 
   this.createLibrary();
 
-  // Reset input fields
   this.bookTitle.value = '';
   this.bookAuthor.value = '';
-
-
-}
+  }
 }
 
 const objectOne = new Bookstore();
