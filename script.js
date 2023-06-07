@@ -56,16 +56,17 @@ class Bookstore {
     this.bookTitle.value = '';
     this.bookAuthor.value = '';
   }
+
+  // remove book
+  removeBook(index) {
+    this.bookLibrary = this.bookLibrary.filter((book, bookIndex) => bookIndex !== index);
+    localStorage.setItem('books', JSON.stringify(objectOne.bookLibrary));
+  
+    this.createLibrary();
+  }
 }
 
 const objectOne = new Bookstore();
-
-function removeBook(index) {
-  objectOne.bookLibrary = objectOne.bookLibrary.filter((book, bookIndex) => bookIndex !== index);
-  localStorage.setItem('books', JSON.stringify(objectOne.bookLibrary));
-
-  objectOne.createLibrary();
-}
 
 const form = document.querySelector('form');
 form.addEventListener('submit', objectOne.addBook);
