@@ -7,17 +7,15 @@ class Bookstore {
     this.addBook = this.addBook.bind(this);
   }
 
-
   storedLocal() {
     if (localStorage.getItem('books') == null) {
       localStorage.setItem('books', JSON.stringify(this.bookLibrary));
     }
 
-
   const store = localStorage.getItem('books');
       if (store) {
-        this.bookLibrary = JSON.parse(store);
-      }
+          this.bookLibrary = JSON.parse(store);
+    }
   }
 
 createLibrary() {
