@@ -32,7 +32,7 @@ class Bookstore {
               <p> ${book.authorBook}</p>
           </div>
           <div class='removeBtn'>
-            <button onclick="removeBook(${index})">Remove</button>
+            <button onclick="objectOne.removeBook(${index})">Remove</button>
           </div>
         </div>
       </div>
@@ -60,8 +60,8 @@ class Bookstore {
   // remove book
   removeBook(index) {
     this.bookLibrary = this.bookLibrary.filter((book, bookIndex) => bookIndex !== index);
-    localStorage.setItem('books', JSON.stringify(objectOne.bookLibrary));
-  
+    localStorage.setItem('books', JSON.stringify(this.bookLibrary));
+
     this.createLibrary();
   }
 }
@@ -73,4 +73,3 @@ form.addEventListener('submit', objectOne.addBook);
 
 objectOne.storedLocal();
 objectOne.createLibrary();
-removeBook();
