@@ -13,9 +13,9 @@ class Bookstore {
     }
 
     const store = localStorage.getItem('books');
-      if (store) {
-        this.bookLibrary = JSON.parse(store);
-      }
+    if (store) {
+      this.bookLibrary = JSON.parse(store);
+    }
   }
 
   createLibrary() {
