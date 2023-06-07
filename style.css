@@ -15,6 +15,14 @@
     padding: 10px;
 }
 
+.booksDisplay div {
+  padding: 1px;
+}
+
+.booksDisplay > div:nth-child(odd) {
+  background: #e0e0e0;
+}
+
 .book-list-container {
     display: flex;
     justify-content: space-between;

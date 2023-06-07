@@ -28,8 +28,8 @@ createLibrary() {
     <div class='book-list-container'>
     <div class='wrap'>
     <div>
-        <p>${book.title}</p>
-        <p> ${book.author}</p>
+        <p>${book.titleBook}</p>
+        <p> ${book.authorBook}</p>
     </div>
    <div class='removeBtn'>
     <button onclick="removeBook(${index})">Remove</button>
