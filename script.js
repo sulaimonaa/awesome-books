@@ -41,7 +41,7 @@ class Bookstore {
     });
   }
 
-  //take in and stores new book in local storage
+  // take in and stores new book in local storage
   addBook(e) {
     e.preventDefault();
     const titleBook = this.bookTitle.value;
