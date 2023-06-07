@@ -7,6 +7,7 @@ class Bookstore {
     this.addBook = this.addBook.bind(this);
   }
 
+  // displays already added books to storage
   storedLocal() {
     if (localStorage.getItem('books') == null) {
       localStorage.setItem('books', JSON.stringify(this.bookLibrary));
@@ -18,6 +19,7 @@ class Bookstore {
     }
   }
 
+  // create a new book display
   createLibrary() {
     this.BooksContainer.innerHTML = '';
     this.bookLibrary.forEach((book, index) => {
@@ -39,6 +41,7 @@ class Bookstore {
     });
   }
 
+  //take in and stores new book in local storage
   addBook(e) {
     e.preventDefault();
     const titleBook = this.bookTitle.value;
