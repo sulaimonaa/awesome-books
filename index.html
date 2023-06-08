@@ -19,10 +19,16 @@
         </nav>
         <p class="dateDisplay"></p>
     </header>
-    <div class="wrapper">
-      <h1>All awesome books</h1>
+ 
+
+    <!-- BOOK DISPLAY -->
+    <section class="bookContainer wrapper">
+      <h2 class="add-book-head-tag">All Awesome Books</h2>
       <div class="booksDisplay"></div>
       <hr />
+    </section>
+
+    <section class="formContainer wrapper">
       <h2 class="add-book-head-tag">Add a new book</h2>
       <form action="" method="">
         <input
@@ -31,6 +37,7 @@
           id="Title"
           placeholder="Title"
           value=""
+          class="formFields"
         />
         <input
           type="text"
@@ -38,10 +45,26 @@
           id="Author"
           placeholder="Author"
           value=""
+          class="formFields"
         />
-        <button type="submit">Add</button>
+        <button class="formFields" type="submit">Add</button>
       </form>
-    </div>
+    </section>
+
+    <section class="contactContainer wrapper">
+        <h2 class="add-book-head-tag">Contact Information</h2>
+        <p>Do you have any questions or you just want to say "Hello"?</p>
+        <p>You can reach out to us!</p>
+        <ul>
+            <li>Our Email: mail@mail.com</li>
+            <li>Our Phone number: 04778998321</li>
+            <li>Our Address: Streetname 22, 09667 City, Country</li>
+        </ul>
+    </section>
+
+    <footer class="navSection">
+        <p class="navTexts">© AwesomeBooks 2023 - 2024 | All Rights Reserved</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

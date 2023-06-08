@@ -3,17 +3,12 @@
 
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   width: 60%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* HEADER SECTION */
@@ -67,12 +62,11 @@ body {
     font-weight: 300;
 }
 
-
-
+/* BOOK DISPLAY */
 .booksDisplay {
-  width: 100%;
   border: 1px solid #000;
   padding: 10px;
+  background-color: #606c5d;
 }
 
 .booksDisplay div {
@@ -110,6 +104,8 @@ hr {
 
 .add-book-head-tag {
   margin-top: 0;
+  text-align: center;
+  width: 100%;
 }
 
 form {
@@ -117,10 +113,11 @@ form {
   flex-direction: column;
   align-items: end;
   gap: 15px;
+  margin: auto;
 }
 
-form input {
-  width: 140px;
+.formFields {
+    margin: auto;
 }
 
 form button {
