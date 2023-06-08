@@ -73,3 +73,35 @@ form.addEventListener('submit', objectOne.addBook);
 
 objectOne.storedLocal();
 objectOne.createLibrary();
+
+// toggle display between the list, add book and contact
+const showList = document.getElementById('showList');
+const addNewBook = document.getElementById('addNewBook');
+const showContact = document.getElementById('showContact');
+const bookDisplay = document.querySelector('.bookContainer');
+const formDisplay = document.querySelector('.formContainer');
+const contactDisplay = document.querySelector('.contactContainer');
+
+showList.addEventListener('click', () => {
+  bookDisplay.style.display = 'block';
+  formDisplay.style.display = 'none';
+  contactDisplay.style.display = 'none';
+});
+
+addNewBook.addEventListener('click', () => {
+  bookDisplay.style.display = 'none';
+  formDisplay.style.display = 'block';
+  contactDisplay.style.display = 'none';
+});
+
+form.addEventListener('submit', () => {
+  bookDisplay.style.display = 'block';
+  formDisplay.style.display = 'none';
+  contactDisplay.style.display = 'none';
+});
+
+showContact.addEventListener('click', () => {
+  bookDisplay.style.display = 'none';
+  formDisplay.style.display = 'none';
+  contactDisplay.style.display = 'block';
+});
