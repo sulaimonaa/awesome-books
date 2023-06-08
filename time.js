@@ -17,7 +17,7 @@ class DateFormatter {
   }
 
   getOrdinalSuffix(day) {
-    this.day;
+    this.day = day;
     if (day >= 11 && day <= 13) {
       return 'th';
     }
@@ -35,9 +35,10 @@ class DateFormatter {
   }
 
   formatTime(hours, minutes, seconds) {
-    this.hours;
-    this.minutes;
-    this.seconds;
+    this.hours = hours;
+    this.minutes = minutes;
+    this.seconds = seconds;
+
     const ampm = hours >= 12 ? 'pm' : 'am';
     const formattedHours = hours % 12 === 0 ? 12 : hours % 12;
     const formattedMinutes = minutes.toString().padStart(2, '0');
